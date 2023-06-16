@@ -1,8 +1,17 @@
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import ProductList from "./ProductsList";
 
 function App() {
 
-  return <h1>Hola mundo en React!</h1>
 
+  return (
+    <div>
+      <Navbar />
+      <ProductList />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
