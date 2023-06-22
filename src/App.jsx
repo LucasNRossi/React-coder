@@ -1,8 +1,11 @@
+import Navbar from "./components/layout/navbar/Navbar";
 
-function App() {
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 
-  return <h1>Hola mundo en React!</h1>
-
-}
-
-export default App
+export default App;
