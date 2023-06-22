@@ -1,18 +1,19 @@
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import CartWidget from "../../common/cartWidget/CartWidget";
-import "./Navbar.css";
+
 const Navbar = () => {
   return (
-    <div className="navContainer">
-      <h4>Comision: 43290</h4>
-
-      <ul className="containerCategories">
-        <li>Todas</li>
-        <li>Deportivas</li>
-        <li>Urbanas</li>
-      </ul>
-
-      <CartWidget />
-    </div>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          El Cimarrón - Arte
+        </Typography>
+        <Button color="inherit">Todos</Button>
+        <Button color="inherit">Lienzo</Button>
+        <Button color="inherit">Cartón</Button>
+        <CartWidget />
+      </Toolbar>
+    </AppBar>
   );
 };
 
